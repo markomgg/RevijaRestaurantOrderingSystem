@@ -38,9 +38,9 @@ public static class DbSeeder
         // Add a sample customer
         var customer = new Customer
         {
-            Name = "Marko Markovski",
+            FullName = "Marko Markovski",
             Email = "marko@example.com",
-            PhoneNumber = "070123456",
+            Phone = "070123456",
             Address = "Partizanska 10"
         };
         context.Customers.Add(customer);

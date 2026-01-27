@@ -17,3 +17,4 @@ C:\Users\User\Desktop\RevijaRestaurantOrderingSystem\Repository\obj\Debug\net8.0
 C:\Users\User\Desktop\RevijaRestaurantOrderingSystem\Repository\obj\Debug\net8.0\Repository.pdb
 C:\Users\User\Desktop\RevijaRestaurantOrderingSystem\Repository\obj\Debug\net8.0\Repository.genruntimeconfig.cache
 C:\Users\User\Desktop\RevijaRestaurantOrderingSystem\Repository\obj\Debug\net8.0\ref\Repository.dll
+C:\Users\User\Desktop\RevijaRestaurantOrderingSystem\Repository\obj\Debug\net8.0\Repository.sourcelink.json

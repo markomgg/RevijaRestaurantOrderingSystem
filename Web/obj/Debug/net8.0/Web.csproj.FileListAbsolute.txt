@@ -132,3 +132,4 @@ C:\Users\User\Desktop\RevijaRestaurantOrderingSystem\Web\obj\Debug\net8.0\refint
 C:\Users\User\Desktop\RevijaRestaurantOrderingSystem\Web\obj\Debug\net8.0\Web.pdb
 C:\Users\User\Desktop\RevijaRestaurantOrderingSystem\Web\obj\Debug\net8.0\Web.genruntimeconfig.cache
 C:\Users\User\Desktop\RevijaRestaurantOrderingSystem\Web\obj\Debug\net8.0\ref\Web.dll
+C:\Users\User\Desktop\RevijaRestaurantOrderingSystem\Web\obj\Debug\net8.0\Web.sourcelink.json
