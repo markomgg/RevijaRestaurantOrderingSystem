@@ -1,0 +1,53 @@
+
+:root{
+	--bg:#f4f6fb;
+	--card:#ffffff;
+	--muted:#64748b;
+	--brand:#0b5ed7;
+	--accent:#06b6d4;
+	--danger:#ef4444;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body {
+	font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+	margin: 0; padding: 0; background: linear-gradient(180deg,var(--bg), #eef2f8); color:#0f172a;
+}
+.topnav{display:flex;align-items:center;justify-content:space-between;padding:12px 24px;background:linear-gradient(90deg,var(--card),#f8fafc);box-shadow:0 2px 6px rgba(2,6,23,0.06)}
+.brand{font-weight:700;color:var(--brand);font-size:1.1rem}
+.navlinks{display:flex;gap:14px}
+.navlinks a{color:#0f172a;text-decoration:none;padding:8px 12px;border-radius:6px;font-weight:600}
+.navlinks a:hover{background:rgba(11,94,215,0.06)}
+.container{max-width:1100px;margin:32px auto;padding:24px;background:transparent}
+.hero{background:var(--card);padding:28px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06);display:flex;justify-content:space-between;align-items:center;gap:20px}
+.hero h1{margin:0;font-size:1.6rem}
+.hero p{margin:6px 0 0;color:var(--muted)}
+
+.card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 4px 16px rgba(2,6,23,0.04)}
+.form-row{display:flex;flex-direction:column;gap:8px}
+label{font-size:0.95rem}
+input[type=text],input[type=password],input[type=number]{width:100%;padding:10px;border:1px solid #e6eef8;border-radius:8px}
+button{padding:10px 16px;background:var(--brand);color:#fff;border:none;border-radius:8px;cursor:pointer;font-weight:600}
+button.secondary{background:#fff;color:var(--brand);border:1px solid #e6eef8}
+.message{margin-top:12px;color:var(--danger)}
+
+/* Menu grid */
+#menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:16px}
+#menu > div{padding:14px;border-radius:10px;background:linear-gradient(180deg,var(--card),#ffffff);box-shadow:0 3px 10px rgba(2,6,23,0.04);display:flex;flex-direction:column;gap:8px}
+.menu-title{font-weight:700}
+.menu-desc{font-size:0.9rem;color:var(--muted)}
+.menu-meta{display:flex;justify-content:space-between;align-items:center}
+.qty{width:70px}
+
+/* Orders list */
+#ordersList{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+#ordersList li{background:var(--card);padding:12px;border-radius:10px;box-shadow:0 2px 8px rgba(2,6,23,0.04)}
+
+/* Weather */
+#output{background:#0f172a;color:#fff;padding:12px;border-radius:8px;white-space:pre-wrap}
+
+@media(max-width:720px){
+	.hero{flex-direction:column;align-items:flex-start}
+	.topnav{padding:10px}
+}
+

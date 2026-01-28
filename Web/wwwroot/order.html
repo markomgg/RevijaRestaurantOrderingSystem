@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Order - Revija</title>
+  <link rel="stylesheet" href="/css/site.css" />
+  <script defer src="/js/order.js"></script>
+</head>
+<body>
+  <nav class="topnav">
+    <div class="brand">Revija</div>
+    <div class="navlinks">
+      <a href="/">Home</a>
+      <a href="/order.html">Order</a>
+      <a href="/orders.html">All Orders</a>
+      <a href="/weather.html">Weather</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="hero">
+      <div>
+        <h1>Place an Order</h1>
+        <p class="muted">Choose items from the menu and place your delivery order.</p>
+      </div>
+      <div class="card" style="width:420px;">
+        <h3>Your selection</h3>
+        <div id="selection" style="min-height:80px">No items selected.</div>
+        <div style="display:flex;gap:8px;margin-top:12px">
+          <button id="placeOrder">Place Order</button>
+          <button class="secondary" id="clearSelection">Clear</button>
+        </div>
+        <div id="message" class="message"></div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h3>Menu</h3>
+      <div id="menu"></div>
+    </div>
+  </main>
+</body>
+</html>

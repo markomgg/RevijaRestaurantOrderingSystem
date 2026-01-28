@@ -12,6 +12,7 @@ public class RevijaDbContext : DbContext
 
     public DbSet<MenuItem> MenuItems => Set<MenuItem>();
     public DbSet<Customer> Customers => Set<Customer>();
+    public DbSet<Revija.Domain.Entities.User> Users => Set<Revija.Domain.Entities.User>();
     public DbSet<Order> Orders => Set<Order>();
     public DbSet<OrderItem> OrderItems => Set<OrderItem>();
 

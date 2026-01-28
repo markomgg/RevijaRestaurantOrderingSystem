@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Revija - Home</title>
+  <link rel="stylesheet" href="/css/site.css" />
+</head>
+<body>
+  <nav class="topnav">
+    <a href="/">Home</a>
+    <a href="/order.html">Order</a>
+    <a href="/orders.html">All Orders</a>
+    <a href="/weather.html">Weather</a>
+    <a href="/login.html">Login</a>
+    <a href="/register.html">Register</a>
+  </nav>
+  <main class="container">
+    <h1>Welcome to Revija</h1>
+    <p id="welcome"></p>
+  </main>
+  <script>
+    const token = localStorage.getItem('revija_token');
+    const user = localStorage.getItem('revija_user');
+    const welcome = document.getElementById('welcome');
+    if (token && user) {
+      welcome.textContent = `Signed in as ${user}`;
+    } else {
+      welcome.innerHTML = 'You are not signed in. <a href="/login.html">Sign in</a>';
+    }
+  </script>
+</body>
+</html>

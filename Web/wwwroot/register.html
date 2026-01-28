@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Register - Revija</title>
+  <link rel="stylesheet" href="/css/site.css" />
+  <script defer src="/js/register.js"></script>
+</head>
+<body>
+  <main class="container">
+    <div class="hero">
+      <div>
+        <h1>Create account</h1>
+        <p class="muted">Join Revija to order food quickly</p>
+      </div>
+      <div class="card" style="min-width:320px;max-width:420px">
+        <form id="registerForm" class="form-row">
+          <label>Username
+            <input type="text" name="username" required />
+          </label>
+          <label>Password
+            <input type="password" name="password" required />
+          </label>
+          <label>Confirm password
+            <input type="password" name="confirm" required />
+          </label>
+          <div style="display:flex;gap:8px;align-items:center">
+            <button type="submit">Register</button>
+            <a class="nav-link" href="/login.html" style="margin-left:auto">Sign in</a>
+          </div>
+          <div id="message" class="message"></div>
+        </form>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Revija.Application.DTOs;
 using Revija.Application.Interfaces;
+using Revija.Infrastructure.Data;
 
 namespace Revija.API.Controllers;
 
@@ -9,10 +10,12 @@ namespace Revija.API.Controllers;
 public class OrdersController : ControllerBase
 {
     private readonly IOrderService _service;
+    private readonly RevijaDbContext _db;
 
-    public OrdersController(IOrderService service)
+    public OrdersController(IOrderService service, RevijaDbContext db)
     {
         _service = service;
+        _db = db;
     }
 
     [HttpPost]
@@ -20,5 +23,14 @@ public class OrdersController : ControllerBase
     {
         var result = _service.PlaceOrder(orderDto);
         return Ok(result);
+    }
+
+    [HttpGet]
+    public IActionResult GetAll()
+    {
+        var orders = _db.Orders
+            .Select(o => new OrderDto { OrderId = o.Id, Status = o.Status, TotalPrice = o.TotalPrice })
+            .ToList();
+        return Ok(orders);
     }
 }

@@ -54,10 +54,13 @@ using (var scope = app.Services.CreateScope())
     app.UseSwaggerUI();
 // }
 
-app.UseHttpsRedirection();
+    app.UseDefaultFiles();
+    app.UseStaticFiles();
 
-app.UseAuthorization();
+    app.UseHttpsRedirection();
 
-app.MapControllers();
+    app.UseAuthorization();
 
-app.Run();
+    app.MapControllers();
+
+    app.Run();
